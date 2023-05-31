@@ -1,0 +1,23 @@
+
+replicaCount: 1
+service:
+  ports:
+    name: ""
+    port:
+    containerPort:
+
+ingress:
+  path: /*
+  port:
+
+selector:
+  app:
+
+image:
+  name: ""
+  tag: ""
+
+metadata:
+  name_deployment:
+  name_service:
+  name_ingress:

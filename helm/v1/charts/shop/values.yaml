@@ -1,0 +1,22 @@
+replicaCount: 1
+service:
+  ports:
+      name: http
+      port: 8085
+      containerPort: 8085
+
+ingress:
+  path: /
+  port: 8085
+
+selector:
+  app: shop
+
+image:
+  name: shop
+  tag: 2
+
+metadata:
+  name_deployment: shop-deployment
+  name_service: shop-service
+  name_ingress: shop-ingress
